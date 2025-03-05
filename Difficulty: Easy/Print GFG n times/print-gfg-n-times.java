@@ -22,13 +22,11 @@ System.out.println("~");
 
 
 class Solution {
-    int count=1;
     void printGfg(int N) {
-        if(count>N){
+        if(N==0){
             return;
         }
         System.out.print("GFG"+" ");
-        count++;
-        printGfg(N);
+        printGfg(N-1);
     }
 }
