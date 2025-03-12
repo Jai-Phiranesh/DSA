@@ -1,11 +1,11 @@
 class Solution {
 
     public char kthCharacterHelper(int k,StringBuilder sb){
-        if(sb.toString().length()>=k){
-            return sb.toString().charAt(k-1);
+        if(sb.length()>=k){
+            return sb.charAt(k-1);
         }
         String append="";
-        for(int i=0;i<sb.toString().length();i++){
+        for(int i=0;i<sb.length();i++){
             char toadd= sb.charAt(i);
             toadd++;
             append+= toadd;
