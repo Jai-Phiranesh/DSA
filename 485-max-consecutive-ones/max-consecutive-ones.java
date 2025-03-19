@@ -6,7 +6,6 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             if(nums[i]==1){
                 concicutive++;
-                System.out.println(concicutive);
             }
             else{
                 if(concicutive>max){
