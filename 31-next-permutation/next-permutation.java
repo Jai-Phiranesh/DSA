@@ -9,7 +9,6 @@ class Solution {
                 break;
             }
         }
-        System.out.println(ind);
         if(ind == -1){
             int j=0;
             int k=n-1;
@@ -47,9 +46,5 @@ class Solution {
                 j++;
                 k--;
             }
-
-
-
-        
     }
 }
