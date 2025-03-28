@@ -16,9 +16,7 @@ class Solution {
             suffix=suffix*nums[nums.length-i-1];
 
             max= Math.max(max,Math.max(prefix,suffix));
-
         }
-        
         return max;
     }
 }
