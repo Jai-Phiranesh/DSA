@@ -6,7 +6,6 @@ class Solution {
 
         while(low<=high){
             int mid =(low+high)/2;
-            System.out.println(mid);
             if(nums[mid]==x){
                 return mid;
             }
