@@ -14,15 +14,14 @@ class Solution {
         return days;
     }
     public int shipWithinDays(int[] weights, int days) {
-        int sum=0;
-        int max = Integer.MIN_VALUE;
+        int high=0;
+        int low = Integer.MIN_VALUE;
         int ans = -1;
         for(int i=0;i<weights.length;i++){
-            sum += weights[i];
-            max = Math.max(max,weights[i]);
+            high += weights[i];
+            low = Math.max(low,weights[i]);
         }
-        int low = max;
-        int high = sum;
+       
 
         while(low<=high){
             int mid = (low+high)/2;
