@@ -31,12 +31,12 @@ class Solution {
         ListNode fast = head;
 
 
-        while(fast!=null&&fast.next!=null){
+        while(fast.next!=null&&fast.next.next!=null){
             slow = slow.next;
             fast=fast.next.next;
         }
 
-        ListNode nhead = reverse(slow);
+        ListNode nhead = reverse(slow.next);
 
         ListNode start = head;
         ListNode end = nhead;
