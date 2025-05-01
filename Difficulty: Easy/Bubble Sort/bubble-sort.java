@@ -7,32 +7,31 @@ import java.util.*;
 
 // } Driver Code Ends
 
+
 // User function Template for Java
 
 class Solution {
     // Function to sort the array using bubble sort algorithm.
-    public void bubbleSortrecursion(int arr[],int i){
-        if(i==0) return;
-        boolean swap = false;
-        for(int j=0;j<i;j++){
-            if(arr[j]>arr[j+1]){
-                swap = true;
-                int temp = arr[j+1];
-                arr[j+1] = arr[j];
-                arr[j] = temp;
-            }
-        }
-        if(!swap)return;
-        
-        bubbleSortrecursion(arr,i-1);
-
-    }
     public static void bubbleSort(int arr[]) {
         int n = arr.length;
-        Solution s = new Solution();
-        s.bubbleSortrecursion(arr,n-1);
+        for(int i=n-1;i>=0;i--){
+            boolean swap = false;
+            for(int j=0;j<i;j++){
+                if(arr[j]>arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                    swap = true;
+                    
+                }
+            }
+            
+            
+        }
     }
 }
+
+
 
 
 //{ Driver Code Starts.
