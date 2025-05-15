@@ -37,6 +37,8 @@ class Main {
 // } Driver Code Ends
 
 
+
+
 class Solution {
     void merge(int arr[],int low,int mid, int high){
         int left = low;
@@ -60,14 +62,18 @@ class Solution {
             temp.add(arr[right]);
             right++;
         }
+        int index = 0;
         for(int i=low;i<=high;i++){
-            arr[i] = temp.get(i-low);
+            arr[i] = temp.get(index);
+            index++;
         }
     }
     
-    void divide(int arr[],int low,int high){
+    void divide(int arr[],int low,int high){ 
         if(low>=high)
             return;
+        
+            
         
         int mid = (low+high)/2;
         divide(arr,low,mid);
