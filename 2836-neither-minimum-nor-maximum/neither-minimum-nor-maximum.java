@@ -4,12 +4,16 @@ class Solution {
         if(nums.length<=2){
             return -1;
         }
+
         int min = Integer.MAX_VALUE;
-         int max = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE;
        
         for(int i=0;i<nums.length;i++){
             min = Math.min(min,nums[i]);
             max = Math.max(max,nums[i]);
+            if(nums[i]!=max && nums[i]!=min && max!=Integer.MIN_VALUE && min!=Integer.MAX_VALUE ){
+                return nums[i];
+            }
         }
 
         for(int i=0;i<nums.length;i++){
