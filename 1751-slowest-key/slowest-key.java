@@ -23,11 +23,8 @@ class Solution {
 
                 else if(maxtime<time){
                     max=keysPressed.charAt(i);
-                     maxtime=Math.max(maxtime,time);
+                     maxtime=time;
                 }
-
-               
-                
             }
            
         }
