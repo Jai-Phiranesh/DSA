@@ -22,9 +22,7 @@ class Solution {
 
             sum=sum%26;
            char res = 'a'; 
-           for(int j=0;j<sum;j++){
-            res++;
-           }
+           res+=sum;
 
            result+=res;
         }
