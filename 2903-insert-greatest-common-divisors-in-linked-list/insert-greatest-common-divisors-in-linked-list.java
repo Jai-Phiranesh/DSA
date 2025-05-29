@@ -39,7 +39,6 @@ class Solution {
             secondElement=temp.val;
             count++;
             if(count == 2){
-                System.out.println(firstElement+" "+secondElement);
                 int gcd = gcd(firstElement,secondElement);
                 ListNode node = new ListNode(gcd);
                 prev.next=node;
