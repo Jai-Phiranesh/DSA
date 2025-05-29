@@ -25,6 +25,7 @@ class Solution {
                    if(sum1==sum2){
                         ans[0] = aliceSizes[i];
                         ans[1] = bobSizes[j];
+                        return ans;
                    }
                    else{
                         sum1=temp1;
@@ -34,7 +35,7 @@ class Solution {
         }
     }
  
-     else if(sum1<sum2){
+     else {
         for(int i = 0; i<aliceSizes.length;i++){
             for(int j = 0; j<bobSizes.length;j++){
                    sum1+= bobSizes[j]-(aliceSizes[i]);
@@ -42,6 +43,7 @@ class Solution {
                    if(sum1==sum2){
                         ans[0] = aliceSizes[i];
                         ans[1] = bobSizes[j];
+                        return ans;
                    }
                     else{
                         sum1=temp1;
