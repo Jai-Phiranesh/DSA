@@ -1,21 +1,28 @@
 class Solution {
     public int[] minOperations(String boxes) {
-         int n = boxes.length();
-        int [] ans = new int[n];
-       
 
-        for(int i=0;i<n;i++)
+        int n = boxes.length();
+        int ans[] = new int[n]; 
+       
+        ArrayList<Integer> ar = new ArrayList<>();
+
+        for(int i =0 ;i<n; i++)
+        {
+            if((boxes.charAt(i)=='1')){
+               ar.add(i);
+            }
+        }
+
+        for(int i =0 ;i<n; i++)
         {
             int count = 0;
-            for(int j=0;j<n;j++)
+            for(int temp:ar)
             {
-                if(i==j || boxes.charAt(j)=='0') continue;
-                else{
-                    count += Math.abs(i-j);
-                }
+                count+=Math.abs(i-temp);
             }
             ans[i]=count;
         }
+
         return ans;
     }
 }
