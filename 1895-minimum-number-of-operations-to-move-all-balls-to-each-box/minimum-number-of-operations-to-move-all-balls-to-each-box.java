@@ -1,8 +1,8 @@
 class Solution {
     public int[] minOperations(String boxes) {
-
-        int [] ans = new int[boxes.length()];
-        int n = boxes.length();
+         int n = boxes.length();
+        int [] ans = new int[n];
+       
 
         for(int i=0;i<n;i++)
         {
