@@ -5,17 +5,19 @@ class Solution {
         StringBuilder sb = new StringBuilder(s);
         
         while(left<=right){
-            if(!Character.isLetter(s.charAt(left))){
+            char leftChar = s.charAt(left);
+            char rightChar = s.charAt(right);
+            if(!Character.isLetter(leftChar)){
                 left++;
                 continue;
             }
-            else if(!Character.isLetter(s.charAt(right))){
+            else if(!Character.isLetter(rightChar)){
                 right--;
                 continue;
             }
             else{
-                char temp = sb.charAt(left);
-                sb.setCharAt(left,sb.charAt(right));
+                char temp = leftChar;
+                sb.setCharAt(left,rightChar);
                 sb.setCharAt(right,temp);
                 left++;
                 right--;
