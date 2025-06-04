@@ -24,10 +24,10 @@ class Solution {
                l++;
             }
 
-            
+            if(map.size()<=2){
                 max = Math.max((r-l)+1 , max);
-                r++;
-            
+            }
+              r++;
         }
 
         return max;
