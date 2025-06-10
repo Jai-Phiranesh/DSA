@@ -6,9 +6,7 @@ class Solution {
         int count = 0;
         int lastEnd = intervals[0][1];
 
-        for(int[] t : intervals){
-            System.out.println(t[0] +" "+t[1]);
-        }
+       
 
         for(int i=1; i<intervals.length; i++){
             if(lastEnd>intervals[i][0]){
