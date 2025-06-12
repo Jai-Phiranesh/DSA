@@ -7,10 +7,9 @@ class Solution {
         Arrays.sort(s);
 
         while(r<s.length && l<g.length){
-
             if(s[r]>=g[l]){
-                l++;
                 r++;
+                 l++;
                 count++;
             }
             else{
