@@ -10,7 +10,6 @@ class Solution {
             int rem = num%10;
             result += rem;
             num=num/10;
-           
             }
             num=result;
            
