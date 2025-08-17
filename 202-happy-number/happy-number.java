@@ -9,7 +9,7 @@ class Solution {
             n = n/10;
         }
         return sum;
-    }
+    }              
 
     public boolean isHappy(int n) {
 
