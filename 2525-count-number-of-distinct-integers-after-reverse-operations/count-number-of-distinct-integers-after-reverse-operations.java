@@ -13,7 +13,7 @@ class Solution {
                 re = (re*10)+remain;
                 te/=10;
             }
-            System.out.println(re);
+            
             set.add(re);
         }
         return set.size();
