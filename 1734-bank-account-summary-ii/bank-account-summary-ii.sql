@@ -1,0 +1,1 @@
+select Users.name as NAME , sum(Transactions.amount) as BALANCE from users left join Transactions on Users.account = Transactions.account group by(Transactions.account) having sum(Transactions.amount)>10000;
