@@ -1,0 +1,1 @@
+select * from cinema where cinema.id%2 !=0 and cinema.description != "boring" order by  rating desc;
