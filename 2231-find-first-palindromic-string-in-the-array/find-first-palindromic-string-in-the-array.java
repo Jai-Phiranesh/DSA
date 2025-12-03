@@ -1,9 +1,10 @@
 class Solution {
-    public boolean checkPalindrome(String s ){
-        int i=0;
-        int j=s.length()-1;
 
-        while(i<=j){
+    public boolean check(String s){
+        int i =0;
+        int j =s.length()-1;
+
+        while(i<j){
             if(s.charAt(i)!=s.charAt(j)){
                 return false;
             }
@@ -13,9 +14,10 @@ class Solution {
         return true;
     }
     public String firstPalindrome(String[] words) {
-        for(String s:words){
-            if(checkPalindrome(s)){
-                return s;
+        
+        for(String temp:words){
+            if(check(temp)){
+                return temp;
             }
         }
         return "";
