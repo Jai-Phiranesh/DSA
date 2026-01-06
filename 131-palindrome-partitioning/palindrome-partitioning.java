@@ -29,9 +29,9 @@ class Solution {
 
     }
     public List<List<String>> partition(String s) {
-        List<List<String>> result = new ArrayList<>();
-         plain(result,new ArrayList<String>(),0,s);
-         return result;
+        List<List<String>> Result = new ArrayList<>();
+         plain(Result,new ArrayList<String>(),0,s);
+         return Result;
 
     }
 }
