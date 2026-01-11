@@ -9,7 +9,7 @@ class Solution {
                 result[1]=map.get(numNeeded);
                 return result;
             }
-            map.put(nums[i],i);
+             map.put(nums[i],i);
        }
         return result;
     }
