@@ -1,6 +1,6 @@
 class Solution {
     public int sumFourDivisors(int[] nums) {
-        int sum = 0;
+        int su = 0;
         
         for(int temp:nums){
             ArrayList<Integer> ar = new ArrayList<>();
@@ -13,10 +13,10 @@ class Solution {
             }
             if(ar.size()==4){
                 for(int temp1:ar){
-                    sum+=temp1;
+                    su+=temp1;
                 }
             }
         }
-        return sum;
+        return su;
     }
 }
