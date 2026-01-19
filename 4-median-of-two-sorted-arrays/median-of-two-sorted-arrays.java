@@ -35,8 +35,9 @@ class Solution {
         while(j<n2){
             if(count==ind1) index1=nums2[j];
             if(count==ind2) index2=nums2[j];
-            j++;
+            
             count++;
+            j++;
         }
 
         if(n%2==1){
