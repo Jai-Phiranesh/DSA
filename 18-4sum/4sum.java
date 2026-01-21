@@ -30,8 +30,9 @@ class Solution {
                             arr.add(nums[k]);
                             arr.add(nums[l]);
                             result.add(arr);
-                            k++;
+                            
                                l--;
+                               k++;
                             while(k<l && nums[k]==nums[k-1]) k++;
                                 while(k<l && nums[l]==nums[l+1]) l--;
 
