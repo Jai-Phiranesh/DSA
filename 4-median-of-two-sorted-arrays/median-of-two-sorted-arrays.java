@@ -8,8 +8,9 @@ class Solution {
         int ind1 = ind2-1;
         int index1=-1;
         int index2=-1;
-        int i =0;
+       
         int j=0;
+         int i =0;
         int count = 0;
         while(i<n1 && j<n2){
             if(nums1[i]<=nums2[j]){
