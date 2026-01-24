@@ -11,9 +11,9 @@ class Solution {
             int remainder=x%10;
 
              
-
+x=x/10;
             finalresult=(finalresult*10)+remainder;
-            x=x/10;
+            
         }
        return finalresult;
       }
