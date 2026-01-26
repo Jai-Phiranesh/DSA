@@ -8,11 +8,11 @@ class Solution {
 
                return 0;
         }
-            int remainder=x%10;
+            int remainde=x%10;
 
              
 x=x/10;
-            finalresult=(finalresult*10)+remainder;
+            finalresult=(finalresult*10)+remainde;
             
         }
        return finalresult;
