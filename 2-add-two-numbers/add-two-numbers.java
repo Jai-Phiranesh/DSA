@@ -10,8 +10,9 @@
  */
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode temp1 = l1;
         ListNode temp2 = l2;
+        ListNode temp1 = l1;
+        
         ListNode dummy = new ListNode(-1);
         ListNode curr = dummy;
         int car =0;
