@@ -17,9 +17,9 @@ class Solution {
             if (out > (Integer.MAX_VALUE - digit) / 10) {
                 return (sign == 1) ? Integer.MAX_VALUE : Integer.MIN_VALUE;
             }
-
-            out = out * 10 + digit;
             i++;
+            out = out * 10 + digit;
+            
         }
 
         return (int)(out * sign);
