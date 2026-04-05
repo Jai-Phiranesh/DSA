@@ -1,7 +1,9 @@
 class Solution {
     public boolean judgeCircle(String moves) {
+
+         int y = 0;
         int x = 0;
-        int y = 0;
+       
         for(char move: moves.toCharArray()){
             if( move == 'U')
                 y++;
