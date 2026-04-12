@@ -1,7 +1,9 @@
 class Solution {
     public void nextPermutation(int[] nums) {
+
+         int n=nums.length;
         int ind = -1;
-        int n=nums.length;
+       
 
         for(int i=n-2;i>=0;i--){
             if(nums[i]<nums[i+1]){
