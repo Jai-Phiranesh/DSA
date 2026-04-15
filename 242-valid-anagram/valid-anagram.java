@@ -10,12 +10,11 @@ class Solution {
        
         for (int i = 0; i < s.length(); i++) {
             hash[s.charAt(i) - 'a']++;
+              hash[t.charAt(i) - 'a']--;
         }
 
        
-        for (int i = 0; i < t.length(); i++) {
-            hash[t.charAt(i) - 'a']--;
-        }
+        
 
         
         for (int count : hash) {
