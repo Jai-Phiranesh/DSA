@@ -1,7 +1,8 @@
 class Solution {
     public boolean isPalindrome(int x) {
-        int finalx=x;
+       
         int reverse=0;
+         int finalx=x;
         while(!(x==0)){
             int remainder=x%10;
             reverse=(reverse*10)+remainder;
