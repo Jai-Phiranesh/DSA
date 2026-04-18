@@ -4,8 +4,9 @@ class Solution {
         if(n<=1){
             return s;
         }
-        int maxLen=1;
+        
         String maxString = s.substring(0,1);
+        int maxLen=1;
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n;j++){
                 if(j-i+1>maxLen && isPalindrome(s.substring(i,j+1))){
