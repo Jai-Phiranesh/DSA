@@ -9,10 +9,11 @@ class Solution {
             freq[p.charAt(i)-'a']++;
         }
 
-        int i=0;
+       
         int j=0;
         int n=s.length();
         int k=p.length();
+         int i=0;
 
         while(j<n){
             freq[s.charAt(j)-'a']--;
