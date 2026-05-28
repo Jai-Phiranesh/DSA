@@ -5,8 +5,9 @@ class Solution {
         
 
         
-        int sign = 1;
+      
         int i = 0;
+          int sign = 1;
         if (s.charAt(i) == '+' || s.charAt(i) == '-') {
             sign = (s.charAt(i) == '-') ? -1 : 1;
             i++;
