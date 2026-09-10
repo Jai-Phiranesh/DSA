@@ -3,26 +3,24 @@ class Solution {
         Stack<Character> st = new Stack<>();
 
         for(int i=0;i<s.length();i++){
-            if(s.charAt(i)=='('|| 
-            s.charAt(i)=='{'||
-            s.charAt(i)=='['){
+            if(s.charAt(i)=='('||s.charAt(i)=='{'||s.charAt(i)=='['){
                 st.push(s.charAt(i));
             }
-
+            else if(st.isEmpty()){
+                return false;
+            }
+            
             else{
-                char temp = s.charAt(i);
-                if(st.isEmpty()){
+                char temp = st.pop();
+                System.out.println(temp);
+                if(!((s.charAt(i)==')'&&temp=='(')||(s.charAt(i)==']'&&temp=='[')||(s.charAt(i)=='}'&&temp=='{'))){
                     return false;
                 }
-
-                if(!((temp=='}'&& st.peek()=='{')||
-                (temp==']'&& st.peek()=='[')||
-                (temp==')'&& st.peek()=='('))){
-                    return false;
-                }
-                st.pop();
             }
         }
-        return st.isEmpty();
+        if(st.isEmpty()){
+            return true;
+        }
+        return false;
     }
 }
